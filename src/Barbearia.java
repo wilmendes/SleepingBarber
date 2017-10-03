@@ -21,7 +21,7 @@ public class Barbearia {
         }
     }
 
-    public Cliente cortarProximo(){
+    public synchronized Cliente cortarProximo(){
         Cliente proximo = null;
         if(fila.size() > 0){
             proximo = fila.getFirst();
